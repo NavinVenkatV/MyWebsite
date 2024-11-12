@@ -22,8 +22,7 @@ const Footer = () => {
           presence to the next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          <span className="text-purple">Note:</span>{' '}Website is under development and updation.
         </p>
         <a href="mailto:vnavinvenkat@gmail.com">
           <Button
@@ -46,7 +45,13 @@ const Footer = () => {
             <a href={info.url} target="_blank" rel="noopener noreferrer">
               <img src={info.img} alt="icons" width={20} height={20} />
             </a>
-          ) : ("Nothing")}
+          ) : (
+            <Link href={`/social/${info.id}`}>
+              <a>
+                <img src={info.img} alt="icons" width={20} height={20} />
+              </a>
+            </Link>
+          )}
         </div>
       ))}
     </div>

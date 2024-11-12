@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative flex justify-center items-center bg-black-100 overflow-hidden  sm:px-10 px-5">
+    <div className="relative flex justify-center items-center bg-black-100 overflow-clip sm:px-10 px-10">
       <div className="w-full max-w-7xl">
         <div>
             <FloatingNav 
